@@ -1,0 +1,133 @@
+:root{
+
+    --text : white;
+    --back1 : #0a3463;
+    --back2: white;
+    --accent: yellow;
+}
+html{
+    font-family: Din Alternate;
+}
+
+body{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#start{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--back1);
+    align-items: center;
+    align-content: center;
+}
+h1{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: var(--accent);
+    font-size: 6rem;
+    z-index: 10000;
+    position: relative;
+    transition: 0.5s;
+}
+
+.sticky {
+    position: fixed; /* Zum Fixieren */
+    top: 0; /* Oben am Bildschirm */
+    left: 0;
+    width: 100vw;
+    /* background-color: white; /* Hintergrundfarbe */
+    font-size: 2rem;
+    padding: 10px; /* Padding */
+    box-shadow: 0px 1px 10px grey;
+    text-align: left;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1rem;
+}
+#zahlen{
+    background-color: var(--back2);
+}
+#zahlencontainer{
+    margin: 10vh 30vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+.zahleninhalt{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+#about{
+    padding: 5vh 10vw;
+    gap: 10vw;
+    background-color: var(--back1);
+    display: grid;
+    grid-template-columns: 20% 70%;
+    text-align: center;
+    align-items: center;
+}
+#about p {
+    text-align: justify;
+}
+#about h2{
+
+}
+#termine{
+    padding: 5vh 10vw;
+}
+#termincontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    flex-direction: row;
+
+}
+.einzeltermin{
+    text-align: left;
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px gray;
+}
+.einzeltermin:nth-child(1){
+    background-image: url(ffw-wiek.jpg);
+}
+.einzeltermin:nth-child(2){
+    background-image: url(wiek.jpg);
+}
+.einzeltermin:nth-child(3){
+    background-image: url(ffw-lietzow.jpg);
+}
+.einzeltermin:nth-child(4){
+    background-image: url(kirche-wiek.jpg);
+}
+.inhalt{
+    align-content: center;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.823);
+    bottom: 0;
+    position: absolute;
+}
+.inhalt h4,h5 {
+    padding-left: 1vw;
+    margin: 0.5vh;
+}
