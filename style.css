@@ -41,7 +41,7 @@ h1{
     /* background-color: white; /* Hintergrundfarbe */
     font-size: 2rem;
     padding: 10px; /* Padding */
-    box-shadow: 0px 1px 10px grey;
+    box-shadow: 0px 1px 10px var(--back1);
     text-align: left;
 }
 h2{
@@ -82,9 +82,7 @@ h5 {
 #about p {
     text-align: justify;
 }
-#about h2{
 
-}
 #termine{
     padding: 5vh 10vw;
 }
@@ -131,3 +129,48 @@ h5 {
     padding-left: 1vw;
     margin: 0.5vh;
 }
+
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 3rem;
+    }
+    .sticky{
+        font-size: 1rem;
+    }
+    #zahlencontainer{
+        margin: 10vh 10vw;
+        width: 80vw;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    #about{
+        display:block;
+        background-color: var(--back1);
+        text-align: center;
+        align-items: center;
+    }
+    #about p {
+        text-align: justify;
+    }
+    #termine{
+        padding: 5vh 10vw;
+    }
+    #termincontainer{
+        margin-left: 10vw;
+        margin-bottom: 5vh;
+        width: 60vw;
+        flex-direction: column;
+    
+    }
+    .einzeltermin{
+        text-align: left;
+        width: 60vw;
+        height: 60vw;
+        margin-bottom: 2vh;
+    }
+  }
